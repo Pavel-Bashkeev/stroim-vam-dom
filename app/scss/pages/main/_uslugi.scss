@@ -1,0 +1,48 @@
+.uslugi {
+	&__title {
+		font: $font-big;
+		border-bottom: 2px solid $accent;
+		padding: 20px;
+		width: fit-content;
+		margin: 0 auto 30px;
+	}
+
+	&__btns {
+		max-width: 390px;
+		width: 100%;
+		margin-right: 20px;
+	}
+
+	&__btn {
+		width: 100%;
+		height: 180px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		border: 1px solid $accent;
+		border-radius: 10px;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		&-icon {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			width: 13px;
+			height: 13px;
+		}
+	}
+
+	&__info {
+		background-image: url(../images/dest/uslugiBtnImg/infoBg.webp);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		padding: 43px 35px 43px 103px;
+		border: 1px solid $accent;
+		border-radius: 10px;
+	}
+}

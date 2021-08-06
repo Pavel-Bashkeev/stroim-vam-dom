@@ -1,0 +1,48 @@
+.header {
+	background-color: $black;
+	padding: 10px 0;
+
+	.logo {
+		width: 186px;
+		height: 126px;
+	}
+
+	&__contacts {
+		margin-left: auto;
+	}
+
+	&__tel {
+		color: $accent;
+
+	}
+
+	&__btn {
+		font: $font-small;
+		letter-spacing: 2px;
+		border: 1px solid transparent;
+		transition: all 0.3s;
+		padding: 10px;
+
+		&:hover {
+			border: 1px solid $accent;
+			border-radius: 5px;
+			color: $accent;
+		}
+	}
+}
+
+.menu {
+	&__item {
+		&:not(:last-child) {
+			margin-right: 60px;
+		}
+	}
+
+	&__link {
+		transition: color 0.3s;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+}

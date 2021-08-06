@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+body {
+	color: $white;
+	font: $font-defult;
+	letter-spacing: 2px;
+	background-color: $black;
+}
+
+.btn-reset {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+	color: inherit;
+}
+
+.container {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

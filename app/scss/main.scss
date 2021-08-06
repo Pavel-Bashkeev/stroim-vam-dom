@@ -1,0 +1,13 @@
+@import '../../node_modules/reset-css/sass/reset';
+@import './blocks/classFrame';
+@import './blocks/vars';
+@import './vendor/mixins';
+@import './blocks/fonts';
+@import './blocks/global';
+
+
+// pages
+@import './pages/main/header';
+@import './pages/main/hero';
+@import './pages/main/work';
+@import './pages/main/uslugi';

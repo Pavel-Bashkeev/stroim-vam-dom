@@ -1,0 +1,61 @@
+.work {
+	padding: 60px 0;
+	background-image: url('../images/dest/bgWork.webp');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, .85);
+		z-index: -1;
+	}
+
+	&__title-inner {
+		position: relative;
+		margin-bottom: 50px;
+
+		&::after,
+		&::before {
+			content: '';
+			width: 200px;
+			height: 2px;
+			background-color: $accent;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		color: $accent;
+		font: $font-big;
+
+	}
+}
+
+.work__list {
+	counter-reset: count;
+
+	.work__item {
+		max-width: 481px;
+
+		&:not(:last-child) {
+			margin-bottom: 38px;
+		}
+
+		&::before {
+			content: '0'counter(count);
+			counter-increment: count;
+			font: 400 60px / 73px $font;
+			color: rgba($accent, .5);
+			display: block;
+			margin-right: 20px;
+		}
+	}
+}
