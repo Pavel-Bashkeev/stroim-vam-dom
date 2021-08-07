@@ -1,10 +1,8 @@
-const quizData = [
-  {
+const quizData = [{
     number: 1,
     title: "Какой дом Вы предпочитаете?",
     answer_alias: "money",
-    answers: [
-      {
+    answers: [{
         answer_title: "Из бруса",
         urlImg: "./images/dest/domBrus.webp",
         type: "checkbox",
@@ -20,8 +18,7 @@ const quizData = [
     number: 2,
     title: "Какой размер дома Вам подходит",
     answer_alias: "great",
-    answers: [
-      {
+    answers: [{
         answer_title: "10м на 10м",
         urlImg: "./images/dest/plan10.webp",
         type: "radio",
@@ -42,18 +39,21 @@ const quizData = [
     number: 3,
     title: "Оставьте свой телефон, мы вам перезвоним",
     answer_alias: "phone",
-    answers: [
-      {
-        answer_title: "Введите телефон",
-        type: "text",
-      },
-    ],
+    answers: [{
+      answer_title: "Введите телефон",
+      type: "text",
+    }, ],
   },
 ];
 
 const quizTemplate = (data = [], dataLength = 0, options) => {
-  const { number, title } = data;
-  const { nextBtnText } = options;
+  const {
+    number,
+    title
+  } = data;
+  const {
+    nextBtnText
+  } = options;
   const answers = data.answers.map((item) => {
     return `
 			<label class="quiz-question__label">
@@ -177,18 +177,18 @@ class Quiz {
               } else {
                 el.classList.add("error");
               }
-            case "checkbox":
-              if (el.checked) {
-                isValid = true;
-              } else {
-                el.classList.add("error");
-              }
-            case "radio":
-              if (el.checked) {
-                isValid = true;
-              } else {
-                el.classList.add("error");
-              }
+              case "checkbox":
+                if (el.checked) {
+                  isValid = true;
+                } else {
+                  el.classList.add("error");
+                }
+                case "radio":
+                  if (el.checked) {
+                    isValid = true;
+                  } else {
+                    el.classList.add("error");
+                  }
           }
       }
     });
@@ -238,9 +238,9 @@ class Quiz {
             for (j = form.elements[i].options.length - 1; j >= 0; j--) {
               if (field.options[j].selected)
                 s[s.length] =
-                  encodeURIComponent(field.name) +
-                  "=" +
-                  encodeURIComponent(field.options[j].value);
+                encodeURIComponent(field.name) +
+                "=" +
+                encodeURIComponent(field.options[j].value);
             }
           } else if (
             (field.type != "checkbox" &&
