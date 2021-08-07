@@ -30,74 +30,48 @@
 	border: 1px solid $accent;
 	border-radius: 10px;
 	padding: 40px;
-<<<<<<< HEAD
 
 	&-navigation {
-=======
-	&-navigation{
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 }
-<<<<<<< HEAD
 
 .quiz-question {
 	&__title {
-=======
-.quiz-question{
-	&__title{
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 		color: $accent;
 		text-align: center;
 		margin-bottom: 20px;
 	}
-<<<<<<< HEAD
 
 	&__answers {
-=======
-	&__answers{
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 		display: flex;
 		justify-content: space-around;
 		align-items: stretch;
 		margin-bottom: 50px;
 	}
-<<<<<<< HEAD
 
 	&__label {
-=======
-	&__label{
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		cursor: pointer;
 	}
-<<<<<<< HEAD
 
 	&__viewHouse {
-=======
-	&__viewHouse{
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 		max-width: 480px;
 		height: 300px;
 		margin-bottom: 20px;
 	}
-<<<<<<< HEAD
 
 	&__btn {
-=======
-	&__btn{
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 		font: 500 16px /19px $font;
 		border: 1px solid $accent;
 		border-radius: 100px;
 		padding: 10px 37px;
 		background-color: transparent;
 		transition: background-color .3s;
-<<<<<<< HEAD
 
 		&:hover {
 			background-color: $dark-gray;
@@ -142,14 +116,6 @@
 }
 
 .final-btn {
-=======
-		&:hover{
-			background-color: $dark-gray;
-		}
-	}
-}
-.final-btn{
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 	display: block;
 	margin: -35px 0 0 auto;
 }
