@@ -1,4 +1,6 @@
 .uslugi {
+	padding: 49px 0;
+
 	&__title {
 		font: $font-big;
 		border-bottom: 2px solid $accent;
@@ -22,6 +24,40 @@
 		position: relative;
 		border: 1px solid $accent;
 		border-radius: 10px;
+		z-index: 1;
+		font: $font-defult;
+		transition: color .3s;
+
+		&--active {
+			color: $accent;
+		}
+
+		&.uslugi__btn--active {
+			&::after {
+				background-color: rgba($black, .9);
+			}
+		}
+
+		&:hover {
+			color: $accent;
+
+			&::after {
+				background-color: rgba($black, .9);
+			}
+		}
+
+		&::after {
+			transition: all .3s;
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-color: rgba($black, .7);
+			z-index: -1;
+			border-radius: 10px;
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 15px;
@@ -41,8 +77,52 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		padding: 43px 35px 43px 103px;
 		border: 1px solid $accent;
 		border-radius: 10px;
+		max-width: 590px;
+		width: 100%;
+		padding: 43px 0;
+		position: relative;
+		z-index: 1;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-color: rgba($black, .6);
+			z-index: -1;
+			border-radius: 10px;
+			backdrop-filter: blur(9px);
+		}
+
+		&-title {
+			font: 400 24px / 28px $font;
+			text-align: center;
+			margin-bottom: 30px;
+			color: $accent;
+		}
+
+		&-list {
+			margin-bottom: 40px;
+			padding: 0px 35px 0px 103px;
+		}
+
+		&-item {
+			font: $font-small;
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__more {
+		margin: 0 40px 0 auto;
+		display: block;
+		width: fit-content;
+		color: $accent;
 	}
 }
