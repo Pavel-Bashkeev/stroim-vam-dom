@@ -30,4 +30,9 @@ if (aboutUsActions) {
     
   }
   setInterval(changeValue, delay);
+<<<<<<< HEAD
+=======
+  console.log(counter);
+  console.log(dataAbout.length);
+>>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 }

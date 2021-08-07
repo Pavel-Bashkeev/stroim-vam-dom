@@ -1,4 +1,5 @@
 const quizData = [{
+<<<<<<< HEAD
   number: 1,
   title: "Какой дом Вы предпочитаете?",
   answer_alias: "money",
@@ -44,6 +45,53 @@ const quizData = [{
     type: "tel",
   },],
 },
+=======
+    number: 1,
+    title: "Какой дом Вы предпочитаете?",
+    answer_alias: "money",
+    answers: [{
+        answer_title: "Из бруса",
+        urlImg: "./images/dest/domBrus.webp",
+        type: "checkbox",
+      },
+      {
+        answer_title: "Из блоков",
+        urlImg: "./images/dest/domBlock.webp",
+        type: "checkbox",
+      },
+    ],
+  },
+  {
+    number: 2,
+    title: "Какой размер дома Вам подходит",
+    answer_alias: "great",
+    answers: [{
+        answer_title: "10м на 10м",
+        urlImg: "./images/dest/plan10.webp",
+        type: "radio",
+      },
+      {
+        answer_title: "8м на 8м",
+        urlImg: "./images/dest/plan8.webp",
+        type: "radio",
+      },
+      {
+        answer_title: "10м на 6м",
+        urlImg: "./images/dest/plan6.webp",
+        type: "radio",
+      },
+    ],
+  },
+  {
+    number: 3,
+    title: "Оставьте свой телефон, мы вам перезвоним",
+    answer_alias: "phone",
+    answers: [{
+      answer_title: "Введите телефон",
+      type: "text",
+    }, ],
+  },
+>>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
 ];
 
 const quizTemplate = (data = [], dataLength = 0, options) => {
@@ -59,6 +107,7 @@ const quizTemplate = (data = [], dataLength = 0, options) => {
 			<label class="quiz-question__label">
         ${item.urlImg !== undefined ? `<img class="quiz-question__viewHouse" src="${item.urlImg}" />` : ''}
 				<div class="quiz-question__info">
+<<<<<<< HEAD
           <input 
           type="${item.type}" 
           data-valid="false" 
@@ -67,6 +116,15 @@ const quizTemplate = (data = [], dataLength = 0, options) => {
           ${item.type == "tel" ? 'placeholder="Введите ваш телефон"' : ""} 
           value="${item.type !== "tel" ? item.answer_title : ""}" />
           ${item.type !== "tel" ? `<span class="quiz-question__checkbox"></span>` : ""}
+=======
+          <input type="${
+            item.type
+          }" data-valid="false" class="quiz-question__answer" name="${
+        data.answer_alias
+          }" ${
+            item.type == "text" ? 'placeholder="Введите ваш вариант"' : ""
+          } value="${item.type !== "text" ? item.answer_title : ""}" />
+>>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
           <span>${item.answer_title}</span>
         </div>
 			</label>
@@ -172,12 +230,17 @@ class Quiz {
       switch (el.nodeName) {
         case "INPUT":
           switch (el.type) {
+<<<<<<< HEAD
             case "tel":
+=======
+            case "text":
+>>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
               if (el.value) {
                 isValid = true;
               } else {
                 el.classList.add("error");
               }
+<<<<<<< HEAD
             case "checkbox":
               if (el.checked) {
                 isValid = true;
@@ -190,6 +253,20 @@ class Quiz {
               } else {
                 el.classList.add("error");
               }
+=======
+              case "checkbox":
+                if (el.checked) {
+                  isValid = true;
+                } else {
+                  el.classList.add("error");
+                }
+                case "radio":
+                  if (el.checked) {
+                    isValid = true;
+                  } else {
+                    el.classList.add("error");
+                  }
+>>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
           }
       }
     });
@@ -211,7 +288,11 @@ class Quiz {
         }
       }
 
+<<<<<<< HEAD
       const response = fetch("../serverMail/mail.php", {
+=======
+      const response = fetch("../mail.php", {
+>>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
         method: "POST",
         body: formData,
       });
@@ -239,9 +320,15 @@ class Quiz {
             for (j = form.elements[i].options.length - 1; j >= 0; j--) {
               if (field.options[j].selected)
                 s[s.length] =
+<<<<<<< HEAD
                   encodeURIComponent(field.name) +
                   "=" +
                   encodeURIComponent(field.options[j].value);
+=======
+                encodeURIComponent(field.name) +
+                "=" +
+                encodeURIComponent(field.options[j].value);
+>>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
             }
           } else if (
             (field.type != "checkbox" &&
