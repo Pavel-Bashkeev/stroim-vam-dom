@@ -30,4 +30,48 @@
 	border: 1px solid $accent;
 	border-radius: 10px;
 	padding: 40px;
+	&-navigation{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.quiz-question{
+	&__title{
+		color: $accent;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	&__answers{
+		display: flex;
+		justify-content: space-around;
+		align-items: stretch;
+		margin-bottom: 50px;
+	}
+	&__label{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		cursor: pointer;
+	}
+	&__viewHouse{
+		max-width: 480px;
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	&__btn{
+		font: 500 16px /19px $font;
+		border: 1px solid $accent;
+		border-radius: 100px;
+		padding: 10px 37px;
+		background-color: transparent;
+		transition: background-color .3s;
+		&:hover{
+			background-color: $dark-gray;
+		}
+	}
+}
+.final-btn{
+	display: block;
+	margin: -35px 0 0 auto;
 }
