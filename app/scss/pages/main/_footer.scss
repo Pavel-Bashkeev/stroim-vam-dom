@@ -1,0 +1,39 @@
+.footer {
+  padding: 20px 0;
+  &__tel{
+    margin-bottom: 15px;
+    padding: 5px 0;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+      .footer__contacts-img{
+        fill: $accent;
+      }
+    }
+  }
+  &__email{
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+      .footer__contacts-img{
+        fill: $accent;
+      }
+    }
+  }
+  &__contacts {
+    cursor: pointer;
+    &-img {
+      width: 30px;
+      height: 30px;
+      fill: $white;
+      margin-right: 15px;
+    }
+  }
+  &__info{
+    &-text{
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
