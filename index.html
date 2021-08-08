@@ -218,7 +218,7 @@
 			<h4 class="feedback__title">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h4>
 			<div class="feedback__form">
 				<div class="container">
-					<form class="form">
+					<form class="form" method="POST" action="./serverMail/mailForm.php">
 						<div class="form__inputs">
 							<input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
 							<input class="form__input" type="tel" name="telefon" placeholder="Номер телефона" required>
@@ -242,7 +242,7 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<div class="container display-f align-center justify-beetwen">
+		<div class="container footer__container display-f align-center justify-beetwen">
 			<div class="footer__contacts">
 				<div class="footer__tel display-f align-center">
 					<svg class='footer__contacts-img'>
