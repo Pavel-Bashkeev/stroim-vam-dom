@@ -27,6 +27,9 @@
 		z-index: 1;
 		font: $font-defult;
 		transition: color .3s;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 
 		&--active {
 			color: $accent;

@@ -66,8 +66,8 @@ const quizTemplate = (data = [], dataLength = 0, options) => {
           name="${data.answer_alias}" 
           ${item.type == "tel" ? 'placeholder="Введите ваш телефон"' : ""} 
           value="${item.type !== "tel" ? item.answer_title : ""}" />
-          ${item.type !== "tel" ? `<span class="quiz-question__checkbox"></span>` : ""}
-          <span>${item.answer_title}</span>
+          ${item.type !== "tel" ? `<span class="quiz-question__checkbox"></span> <span>${item.answer_title}</span>` : ""}
+          
         </div>
 			</label>
 		`;
