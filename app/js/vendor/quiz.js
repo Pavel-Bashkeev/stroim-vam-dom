@@ -59,7 +59,6 @@ const quizTemplate = (data = [], dataLength = 0, options) => {
 			<label class="quiz-question__label">
         ${item.urlImg !== undefined ? `<img class="quiz-question__viewHouse" src="${item.urlImg}" />` : ''}
 				<div class="quiz-question__info">
-<<<<<<< HEAD
           <input 
           type="${item.type}" 
           data-valid="false" 
@@ -68,12 +67,6 @@ const quizTemplate = (data = [], dataLength = 0, options) => {
           ${item.type == "tel" ? 'placeholder="Введите ваш телефон"' : ""} 
           value="${item.type !== "tel" ? item.answer_title : ""}" />
           ${item.type !== "tel" ? `<span class="quiz-question__checkbox"></span>` : ""}
-=======
-          <input type="${item.type
-      }" data-valid="false" class="quiz-question__answer" name="${data.answer_alias
-      }" ${item.type == "text" ? 'placeholder="Введите ваш вариант"' : ""
-      } value="${item.type !== "text" ? item.answer_title : ""}" />
->>>>>>> 3622bd4670c1e7355dd2b5fdf38daf61b3b265ed
           <span>${item.answer_title}</span>
         </div>
 			</label>
