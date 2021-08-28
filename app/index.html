@@ -5,6 +5,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description"
+		content="Gaztec - это центр технического обслуживания автомобилей марки ГАЗель, ГАЗон, УАЗ, Волга в Москве. Гарантия. Бесплатная диагностика. Акции." />
+	<link rel="canonical" href="https://stroimvamdom.com/" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://stroimvamdom.com/" />
+	<meta property="og:site_name" content="stroimvamdom" />
+	<link rel="shortcut icon" href="images/dest/logo.webp" type="image/png">
+
+
 	<link rel="stylesheet" href="./css/style.min.css">
 	<title>Строительство домов</title>
 </head>
@@ -23,7 +36,7 @@
 						<a href="uslugi.html" class="menu__link">Услуги</a>
 					</li>
 					<li class="menu__item">
-						<a href="about.html" class="menu__link">О нас</a>
+						<a href="#aboutUs" class="menu__link">О нас</a>
 					</li>
 					<li class="menu__item">
 						<a href="contacts.html" class="menu__link">Контакты</a>
@@ -32,7 +45,7 @@
 			</nav>
 			<div class="header__contacts display-f flex-column items-center">
 				<a href="tel:+79859589074" class="header__tel mr-bottom-10">+79859589074</a>
-				<button class="header__btn btn-reset display-b">Заказать звонок</button>
+				<a href="#form" class="header__btn btn-reset display-b">Заказать звонок</a>
 			</div>
 		</div>
 	</header>
@@ -47,9 +60,9 @@
 						Надежное будущее строим
 						вместе
 					</p>
-					<button class="hero__btn btn-reset">
+					<a href="#form" class="hero__btn btn-reset">
 						Получить консультацию
-					</button>
+					</a>
 				</div>
 				<div class="slider-wrapper">
 					<div class="slider">
@@ -61,14 +74,32 @@
 				</div>
 			</div>
 		</section>
+		<section class="aboutUs" id="aboutUs">
+			<div class="container aboutUs__container display-f align-center">
+				<div class="aboutUs__info">
+					<h4 class="aboutUs__title">О нас</h4>
+					<ul class="aboutUs__list">
+						<li class="aboutUs__item">Качественное проведение работ</li>
+						<li class="aboutUs__item">Обсуждение работы на каждом этапе</li>
+						<li class="aboutUs__item">Профессиональный инструмент</li>
+						<li class="aboutUs__item">Начинаем работу без аванса</li>
+						<li class="aboutUs__item">Доступные цены</li>
+					</ul>
+				</div>
+				<div class="aboutUs__actions">
+					<span class="aboutUs__actions-text--top">Более</span>
+					<span class="aboutUs__actions-count">15</span>
+					<span class="aboutUs__actions-text--bottom">лет успешной работы</span>
+				</div>
+			</div>
+		</section>
 		<section class="work">
 			<div class="container work__container">
 				<div class="work__title-inner display-f justify-beetwen align-center">
 					<h2 class="work__title">КАК МЫ РАБОТАЕМ</h2>
 				</div>
 				<ul class="work__list display-f flex-wrap justify-around">
-					<li class="work__item display-f align-center">Бесплатный выезд мастера на&nbsp;объект для оценки
-						работы
+					<li class="work__item display-f align-center">БЕСПЛАТНЫЙ ПОКАЗ дома по записи
 					</li>
 					<li class="work__item display-f align-center">Оформление и&nbsp;подписание договора</li>
 					<li class="work__item display-f align-center">Обсуждение работы с&nbsp;заказчиком</li>
@@ -87,45 +118,34 @@
 				</h3>
 				<div class="uslugi__items display-f justify-center">
 					<div class="uslugi__btns display-f flex-column">
-						<button class="uslugi__btn btn-reset uslugi__btn--active"
-							style="background-image: url('./images/dest/uslugiBtnImg/handleBg.webp');">
-							<p class="uslugi__btn-text">
-								Отделочные
-								работы
-							</p>
-							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#handle> </use>
-							</svg>
-						</button> <button class="uslugi__btn btn-reset"
+						<button class="uslugi__btn btn-reset"
 							style="background-image: url('./images/dest/uslugiBtnImg/houseBg.webp');">
-							<p class="uslugi__btn-text">
-								Строительство
-								домов
-							</p>
+
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#house> </use>
-							</svg>
-						</button> <button class="uslugi__btn btn-reset"
+								<use xlink:href=images/dest/sprite.svg#house> </use> </svg> <p class="uslugi__btn-text">
+									Строительство домов
+									</p>
+						</button>
+						<button class="uslugi__btn btn-reset"
 							style="background-image: url('./images/dest/uslugiBtnImg/lightBg.webp');">
-							<p class="uslugi__btn-text">
-								Электрика
-							</p>
+
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#light> </use>
-							</svg>
-						</button> <button class="uslugi__btn btn-reset"
+								<use xlink:href=images/dest/sprite.svg#light> </use> </svg> <p class="uslugi__btn-text">
+									Помощь в оформление ипотеке
+									</p>
+						</button>
+						<button class="uslugi__btn btn-reset"
 							style="background-image: url('./images/dest/uslugiBtnImg/lineBg.webp');">
-							<p class="uslugi__btn-text">
-								Сантехника
-							</p>
+
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#line> </use>
-							</svg>
+								<use xlink:href=images/dest/sprite.svg#line> </use> </svg> <p class="uslugi__btn-text">
+									Аренда дома с последующим выкупом
+									</p>
 						</button>
 					</div>
 					<div class="uslugi__info">
 						<h4 class="uslugi__info-title">
-							Сантехника
+							Строительство домов
 						</h4>
 						<ul class="uslugi__info-list">
 							<li class="uslugi__info-item">
@@ -174,25 +194,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="aboutUs">
-			<div class="container aboutUs__container display-f align-center">
-				<div class="aboutUs__info">
-					<h4 class="aboutUs__title">О нас</h4>
-					<ul class="aboutUs__list">
-						<li class="aboutUs__item">Качественное проведение работ</li>
-						<li class="aboutUs__item">Обсуждение работы на каждом этапе</li>
-						<li class="aboutUs__item">Профессиональный инструмент</li>
-						<li class="aboutUs__item">Начинаем работу без аванса</li>
-						<li class="aboutUs__item">Доступные цены</li>
-					</ul>
-				</div>
-				<div class="aboutUs__actions">
-					<span class="aboutUs__actions-text--top">Более</span>
-					<span class="aboutUs__actions-count">15</span>
-					<span class="aboutUs__actions-text--bottom">лет успешной работы</span>
-				</div>
-			</div>
-		</section>
+		
 		<section class="gallery">
 			<div class="container">
 				<h4 class="gallery__title">
@@ -218,7 +220,7 @@
 			<h4 class="feedback__title">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h4>
 			<div class="feedback__form">
 				<div class="container">
-					<form class="form" method="POST" action="./serverMail/mailForm.php">
+					<form id="form" class="form" method="POST" action="./serverMail/mailForm.php">
 						<div class="form__inputs">
 							<input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
 							<input class="form__input" type="tel" name="telefon" placeholder="Номер телефона" required>
@@ -243,29 +245,32 @@
 	</main>
 	<footer class="footer">
 		<div class="container footer__container display-f align-center justify-beetwen">
-			<div class="footer__contacts">
-				<div class="footer__tel display-f align-center">
-					<svg class='footer__contacts-img'>
-						<use xlink:href=images/dest/sprite.svg#phone> </use>
-					</svg>
-					<a href="tel:+79859589074" class="footer__tel:link">+79859589074</a>
-				</div>
-				<div class="footer__email display-f align-center">
-					<svg class='footer__contacts-img'>
-						<use xlink:href=images/dest/sprite.svg#email></use>
-					</svg>
-					<a href="mailto:stroimvamdom24@mail.com" class="footer__tel:link">stroimvamdom24@mail.com</a>
-				</div>
-			</div>
-			<div class="footer__info">
-				<p class="footer__info-text">ИП Костин А.Н.</p>
-				<p class="footer__info-text">УНП <span>11111111111</span></p>
-				<p class="footer__info-text">Юридический адрес</p>
+			<div class="footer-top">
+				<h3 class="footer-top__title">Сделайте свои мечты
+					<span class="footer-top__title--accent">реальностью</span></h3>
+				<a href="catalog.html" class="footer-top__link">Работать с нами</a>
 			</div>
 		</div>
-		<p class="footer__copy text-center">&copy <span class="footer__copy-compy">Строим Вам Дом</span> <span
+		<div class="footer-contats">
+			<a href="/" class="logo">
+				<img src="./images/dest/logo.webp" alt="Строим Вам Дом" class="logo mr-rigth-40">
+			</a>
+			<div class="footer-contacts__links df align-center">
+				<a href="#" class="footer-contacts__link">
+					<img src="./images/dest/whatsapp.webp" alt="whatsapp" class="db">
+				</a>
+				<a href="#" class="footer-contacts__link">
+					<img src="./images/dest/telegram.webp" alt="telegram" class="db">
+				</a>
+				<a href="#" class="footer-contacts__link">
+					<img src="./images/dest/instagram.webp" alt="instagram" class="db">
+				</a>
+			</div>
+		</div>
+		<p class="footer__copy text-center">&copy <span class="footer__copy-compy">СтроимВамДом</span> <span
 				class="footer__copy-date">1990 - 2021</span></p>
 	</footer>
+
 	<script src="./js/main.min.js"></script>
 </body>
 

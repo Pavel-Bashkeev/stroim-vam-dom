@@ -1,7 +1,21 @@
 .hero {
-	background-color: $black;
-	padding: 100px 0;
-
+	padding: 170px 0 100px;
+	background-image: url('../images/dest/hero-bg.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	&::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		background: linear-gradient(198.73deg, rgba(0, 0, 0, 0.0001) 15.31%, rgba(0, 0, 0, 0.837986) 67.37%);
+	}
 	&__info {
 		margin-right: 40px;
 	}

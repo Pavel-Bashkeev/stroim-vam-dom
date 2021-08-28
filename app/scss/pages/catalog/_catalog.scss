@@ -1,0 +1,131 @@
+.catalog {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    background-color: #3d3d3d;
+    border: 1px solid #ff7a00;
+    border-radius: 15px;
+    width: 100%;
+    flex-grow: 1;
+    padding: 40px 15px;
+  }
+
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 20px;
+  padding: 40px 0;
+
+  &__item {
+    transition: all .3s;
+    max-width: 344px;
+    border: 1px solid #ff7a00;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.3);
+    background-color: #2b2b2b;
+    position: relative;
+    overflow: hidden;
+    img {
+      display: block;
+    }
+    &-name {
+      color: $black;
+      background-color: #ff7a00;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    &-box {
+      // margin-bottom: 20px;
+      box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.3);
+      position: relative;
+
+      img {
+        display: block;
+      }
+    }
+
+    &-size {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ff7a00;
+      box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.3);
+
+      img {
+        display: block;
+      }
+
+    }
+
+    &-square,
+    &-area {
+      text-align: center;
+      width: 50%;
+      padding: 15px 0;
+    }
+
+    &-area {
+      background-color: #ff7a00;
+    }
+
+    &-price {
+      display: block;
+      padding: 15px 15px;
+      text-align: right;
+    }
+
+    &-btn {
+      padding: 16px 34px;
+      background-color: $gray;
+      border: 1px solid $accent;
+      border-radius: 10px;
+      letter-spacing: 2px;
+      font: 400 16px/18px $font;
+      cursor: pointer;
+      margin: 0 auto;
+      display: inline-block;
+      color: $white;
+      font: $font-defult;
+      transition: all .3s;
+      position: absolute;
+      left:50%;
+      bottom:0;
+      z-index: 0;
+      transform: translateX(-50%);
+      opacity: 0;
+      &:hover {
+        background-color: $dark-gray;
+      }
+    }
+    &:hover{
+      .catalog-list__item-btn{
+        position: absolute;
+        transition: all .3s;
+        bottom: 50%;
+        transform: translateY(50%) translateX(-50%);
+        z-index: 2;
+        opacity: 1;
+      }
+    }
+  }
+}
+.catalon-more{
+  padding: 16px 34px;
+		background-color: $gray;
+		border: 1px solid $accent;
+		border-radius: 10px;
+		letter-spacing: 2px;
+		font: 400 16px/18px $font;
+		transition: background-color .3s;
+    display: block;
+    margin: 0 auto;
+
+		&:hover {
+			background-color: $dark-gray;
+		}
+}

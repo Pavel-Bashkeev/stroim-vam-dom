@@ -1,10 +1,16 @@
 .header {
-	background-color: $black;
+	background-color: transparent;
 	padding: 10px 0;
-
+position: relative;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+z-index: 5;
 	.logo {
-		width: 186px;
-		height: 126px;
+		width: 100px;
+    height: 70px;
+    margin-right: 30px;
 	}
 
 	&__contacts {
