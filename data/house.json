@@ -1,0 +1,178 @@
+[
+  {
+    "id" : 1,
+    "route": "leningradskoe",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/1/1.jpg",
+    "price" : 3940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  },
+  {
+    "id" : 2,
+    "route": "leningradskoe",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/2/1.jpg",
+    "price" : 4940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  },
+  {
+    "id" : 3,
+    "route": "nosovikhinskoe",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/3/1.jpg",
+    "price" : 2940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  },
+  {
+    "id" : 4,
+    "route": "gorkovskoye",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/3/1.jpg",
+    "price" : 1940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  },
+  {
+    "id" : 5,
+    "route": "leningradskoe",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/3/1.jpg",
+    "price" : 6940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  },
+  {
+    "id" : 6,
+    "route": "shchelkovskoye",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/3/1.jpg",
+    "price" : 7940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  },
+  {
+    "id" : 7,
+    "route": "iaroslovskoe",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/3/1.jpg",
+    "price" : 9940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  },
+  {
+    "id" : 8,
+    "route": "dmitrovskoe",
+    "title" : "Горизонт (д.Пешки)",
+    "mainImage":"./data/images/3/1.jpg",
+    "price" : 940000,
+    "size": {
+      "square" : "6х8",
+      "area" : 85
+    },
+    "images":[
+      "./data/images/1/1.webp",
+      "./data/images/1/2.webp",
+      "./data/images/1/3.webp"
+    ],
+    "warming" : "Внутри, минеральная вата 50мм",
+    "masonry" : "Газоблок",
+    "foundation" : "Ленточный, армированный",
+    "externalFacade" : "Сайдинг",
+    "inside" : "имитация/вагонка",
+    "transAcc" : "ЖД Березки дачные, автобусная остановка в 3 минутах до станции Крюково, Поварово ездит автобусы"
+  }
+]
