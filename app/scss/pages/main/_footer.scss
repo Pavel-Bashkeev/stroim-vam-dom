@@ -32,6 +32,7 @@
     padding: 25px 69px 25px 40px;
     border-top-right-radius: 18px;
     position: relative;
+    transition: background .3s;
     &::after{
       content: '';
       position: absolute; 
@@ -44,6 +45,10 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+    }
+    &:hover{
+      background: linear-gradient(139.15deg, #C87224 5.46%, #FFAC12 96.96%);
+
     }
   }
 }

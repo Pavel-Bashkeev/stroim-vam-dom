@@ -83,9 +83,14 @@ if (catalogList) {
   }
   window.addEventListener('DOMContentLoaded', ()=>{
     filterBtns.forEach(item => {
+      
       item.addEventListener('click', (e)=>{
         let target = e.target;
         let filterBtnValue = target.dataset.filterBtn;
+        for(let i =0; i < filterBtns.length; i++){
+          filterBtns[i].classList.remove('active-btn');
+        }
+        target.classList.add('active-btn')
         filterBtnValue == 'all' ? loadProducts(): loadFilterItem(filterBtnValue);
       })
     });

@@ -53,4 +53,8 @@ z-index: 5;
 			color: $accent;
 		}
 	}
+	&__link.active-link{
+		color: $accent;
+		pointer-events: none;
+	}
 }
