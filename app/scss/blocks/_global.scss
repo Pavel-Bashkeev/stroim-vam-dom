@@ -65,27 +65,3 @@ main{
 	display: flex;
     flex-direction: column;
 }
-.pagination{
-	padding: 5px 0;
-	margin-bottom: 10px;
-	.container{
-		padding: 20px 15px;
-		background-color: #3d3d3d;
-    border: 1px solid #ff7a00;
-		border-radius: 15px;
-	}
-	&__list{
-		display: flex;
-
-	}
-	&__item{
-		
-		position: relative;
-		&:not(:last-child){
-			margin-right: 20px;
-			&::after{
-				content: '/';
-			}
-		}
-	}
-}

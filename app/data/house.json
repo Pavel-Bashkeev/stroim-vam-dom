@@ -1,6 +1,7 @@
 [
   {
     "id" : 1,
+    "route": "leningradskoe",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/1/1.jpg",
     "price" : 3940000,
@@ -22,9 +23,10 @@
   },
   {
     "id" : 2,
+    "route": "leningradskoe",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/2/1.jpg",
-    "price" : 3940000,
+    "price" : 4940000,
     "size": {
       "square" : "6х8",
       "area" : 85
@@ -43,9 +45,10 @@
   },
   {
     "id" : 3,
+    "route": "nosovikhinskoe",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/3/1.jpg",
-    "price" : 3940000,
+    "price" : 2940000,
     "size": {
       "square" : "6х8",
       "area" : 85
@@ -64,9 +67,10 @@
   },
   {
     "id" : 4,
+    "route": "gorkovskoye",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/3/1.jpg",
-    "price" : 3940000,
+    "price" : 1940000,
     "size": {
       "square" : "6х8",
       "area" : 85
@@ -85,9 +89,10 @@
   },
   {
     "id" : 5,
+    "route": "leningradskoe",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/3/1.jpg",
-    "price" : 3940000,
+    "price" : 6940000,
     "size": {
       "square" : "6х8",
       "area" : 85
@@ -106,9 +111,10 @@
   },
   {
     "id" : 6,
+    "route": "shchelkovskoye",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/3/1.jpg",
-    "price" : 3940000,
+    "price" : 7940000,
     "size": {
       "square" : "6х8",
       "area" : 85
@@ -127,9 +133,10 @@
   },
   {
     "id" : 7,
+    "route": "iaroslovskoe",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/3/1.jpg",
-    "price" : 3940000,
+    "price" : 9940000,
     "size": {
       "square" : "6х8",
       "area" : 85
@@ -148,9 +155,10 @@
   },
   {
     "id" : 8,
+    "route": "dmitrovskoe",
     "title" : "Горизонт (д.Пешки)",
     "mainImage":"./data/images/3/1.jpg",
-    "price" : 3940000,
+    "price" : 940000,
     "size": {
       "square" : "6х8",
       "area" : 85

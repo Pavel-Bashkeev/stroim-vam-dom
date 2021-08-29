@@ -1,25 +1,59 @@
+.pageCatalog{
+  &-box{
+    padding-top: 100px;
+    background-color: #3d3d3d;
+    width: 100%;
+    margin-bottom: 40px;
+    &__title{
+      padding: 40px 0;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 169px;
+        height: 4px;
+        background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+        border-radius: 2px;
+  
+      }
+    }
+  }
+}
 .catalog {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-
   &__container {
-    background-color: #3d3d3d;
-    border: 1px solid #ff7a00;
-    border-radius: 15px;
+    padding-bottom: 40px;
     width: 100%;
-    flex-grow: 1;
-    padding: 40px 15px;
   }
-
+  
 }
-
+.catalog-btns{
+  background: #FFFFFF;
+box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+&__item{
+  padding: 25px 30px;
+  color: $black;
+  width: 100%;
+  &:not(:last-child){
+    border-right: 1px solid #e4e4e4;
+  }
+}
+}
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 30px 20px;
   padding: 40px 0;
+
 
   &__item {
     transition: all .3s;

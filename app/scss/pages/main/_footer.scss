@@ -3,5 +3,67 @@
   position: relative;
   z-index: 2;
   background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 45.25%);
-
+  &__container{
+    flex-direction: column;
+  }
+  &__copy{
+    margin-left: auto;
+  }
+}
+.footer-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+  &__title{
+    font: 700 42px / 54px $font;
+    letter-spacing: -1px;
+    &--accent{
+      color:$accent;
+    }
+  }
+  &__link{
+    color: $black;
+    background: linear-gradient(139.15deg, #FFAC12 5.46%, #C87224 96.96%);
+    font: 700 17px / 22px $font;
+    letter-spacing: -0.43px;
+    padding: 25px 69px 25px 40px;
+    border-top-right-radius: 18px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute; 
+      top: 50%;
+      right: 40px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 10px;
+      background-image: url('../images/dest/sprite.svg#path');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+.footer-contacts{
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .logo{
+    width: 100px;
+    margin-right: 40px;
+  }
+  &__links{
+    display: flex;
+    align-items: center;
+    
+  }
+  &__link{
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
 }
