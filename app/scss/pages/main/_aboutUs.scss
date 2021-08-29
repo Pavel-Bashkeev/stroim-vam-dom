@@ -1,27 +1,36 @@
-.aboutUs{
+.aboutUs {
   padding: 35px 0 88px;
   position: relative;
   z-index: 1;
   box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.1);
   margin-bottom: 80px;
   background-color: rgba(0, 0, 0, 0.1);
-  &__info{
+
+  &__container {
+    padding-bottom: 40px;
+  }
+
+  &__info {
     margin-right: 220px;
   }
-  &__title{
+
+  &__title {
     font: 400 70px / 85px $font;
     margin-bottom: 50px;
     color: $accent;
   }
-  &__item{
-    &:not(:last-child){
+
+  &__item {
+    &:not(:last-child) {
       margin-bottom: 15px;
     }
+
     padding-bottom: 10px;
     border-bottom: 1px solid $accent;
     color: $black;
   }
-  &__actions{
+
+  &__actions {
     width: 320px;
     height: 320px;
     border-radius: 50%;
@@ -30,14 +39,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    span{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+    span {
       display: block;
       color: $black;
     }
-    &-text--top{
+
+    &-text--top {
       margin-top: -40px;
     }
-    &-count{
+
+    &-count {
       font: 700 100px / 130px $font;
       color: $black;
       animation: effectCount 4s infinite ease-in-out;
@@ -45,20 +58,73 @@
   }
 }
 
-@keyframes effectCount{
-  0%{
+.aboutUs-content {
+  flex-direction: row-reverse;
+  display: flex;
+
+  &__box {
+    max-width: 700px;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+  }
+
+  &__right {
+    width: 45%;
+    padding-right: 40px;
+  }
+
+  &__title {
+    color: $black;
+    font: 700 50px / 65px $font;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 169px;
+      height: 4px;
+      background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+      border-radius: 2px;
+
+    }
+  }
+
+  &__descr {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: $font;
+
+    letter-spacing: -0.502564px;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+}
+
+@keyframes effectCount {
+  0% {
     transform: scale(1);
   }
-  25%{
+
+  25% {
     transform: scale(0.6);
   }
-  50%{
+
+  50% {
     transform: scale(1.2);
   }
-  75%{
+
+  75% {
     transform: scale(0.8);
   }
-  100%{
+
+  100% {
     transform: scale(1);
   }
 }
