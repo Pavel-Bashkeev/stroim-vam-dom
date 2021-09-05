@@ -48,6 +48,9 @@
   align-items: stretch;
   justify-content: space-between;
   overflow: hidden;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 
   &__item {
     padding: 25px 30px;

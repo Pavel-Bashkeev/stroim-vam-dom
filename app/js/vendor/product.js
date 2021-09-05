@@ -10,7 +10,7 @@ const normalPrice = (str) => {
 
 if (catalogList) {
   const loadProducts = (quantity = 5) => {
-    fetch('https://pavel-bashkeev.github.io/stroim-vam-dom/app/data/house.json')
+    fetch('../data/house.json')
       .then((response) => {
         return response.json()
       })
@@ -54,7 +54,7 @@ if (catalogList) {
   loadProducts();
 
   const loadFilterItem = (itemBlock) => {
-    fetch('https://pavel-bashkeev.github.io/stroim-vam-dom/app/data/house.json')
+    fetch('../data/house.json')
       .then((response) => {
         return response.json()
       })
