@@ -4,7 +4,10 @@
     background-color: #3d3d3d;
     width: 100%;
     margin-bottom: 40px;
-    background: linear-gradient(225.52deg,  rgba(0, 0, 0, 0.982162) 0.45%, #271A00 95.25%);
+    background:url('../images/dest/catalog.webp'), linear-gradient(225.52deg,  rgba(0, 0, 0, 0.982162) 0.45%, #271A00 95.25%);
+    background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 100% 50%;
 
     &__title {
       padding: 40px 0;
@@ -42,7 +45,7 @@
   box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
   border-radius: 25px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   overflow: hidden;
 

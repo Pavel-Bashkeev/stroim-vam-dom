@@ -1,0 +1,61 @@
+.pageServices{
+  .pageContacts-box{
+    background: url('../images/dest/services.webp'),linear-gradient(225.52deg, rgba(0, 0, 0, 0.982162) 0.45%, #271A00 95.25%);
+    background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 100% 50%;
+  }
+}
+.services {
+  padding: 40px 0;
+
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font: 700 25px / 30px $font;
+    margin-bottom: 25px;
+    text-align: center;
+    color: $black;
+  }
+
+  &-item {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(even) {
+      .services-item__content {
+        flex-direction: row-reverse;
+        .services-item__img {
+          border-top-right-radius: 50px;
+          border-top-left-radius: 0px;
+        }
+      }
+
+      
+    }
+
+    &__text {
+      color: $black;
+      width: 55%;
+      font: 400 18px / 22px $font;
+    }
+
+    &__img {
+      width: 40%;
+      border-top-left-radius: 50px;
+    }
+  }
+}

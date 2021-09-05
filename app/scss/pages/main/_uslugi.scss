@@ -62,6 +62,7 @@
 			background-color: rgba($black, .7);
 			z-index: -1;
 			border-radius: 10px;
+			backdrop-filter: blur(10px);
 		}
 
 		&:not(:last-child) {
@@ -110,18 +111,10 @@
 			margin-bottom: 30px;
 			color: $accent;
 		}
-
-		&-list {
-			margin-bottom: 40px;
-			padding: 0px 35px 0px 103px;
-		}
-
-		&-item {
-			font: $font-small;
-
-			&:not(:last-child) {
-				margin-bottom: 10px;
-			}
+		&-text{
+			font: 400 20px / 22px 'Roboto';
+    padding: 0px 5px 0px 20px;
+    margin: 0 0 40px 0;
 		}
 	}
 

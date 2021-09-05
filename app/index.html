@@ -31,7 +31,7 @@
 						<a href="catalog.html" class="menu__link">Каталог</a>
 					</li>
 					<li class="menu__item">
-						<a href="uslugi.html" class="menu__link">Услуги</a>
+						<a href="services.html" class="menu__link">Услуги</a>
 					</li>
 					<li class="menu__item">
 						<a href="contacts.html" class="menu__link">Контакты</a>
@@ -130,55 +130,59 @@
 				<div class="uslugi__items display-f justify-center">
 					<div class="uslugi__btns display-f flex-column">
 						<button class="uslugi__btn btn-reset"
-							style="background-image: url('./images/dest/uslugiBtnImg/houseBg.webp');">
+							style="background-image: url('./images/dest/uslugiBtnImg/houseBg.webp');" data-btn-filter="stroika">
 
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#house> </use> </svg> <p class="uslugi__btn-text">
+								<use xlink:href=images/dest/sprite.svg#house> </use> </svg> <span class=" display-b uslugi__btn-text">
 									Строительство домов
-									</p>
+									</span>
 						</button>
 						<button class="uslugi__btn btn-reset"
-							style="background-image: url('./images/dest/uslugiBtnImg/lightBg.webp');">
+							style="background-image: url('./images/dest/uslugiBtnImg/lightBg.webp');" data-btn-filter="ipoteka">
 
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#light> </use> </svg> <p class="uslugi__btn-text">
+								<use xlink:href=images/dest/sprite.svg#light> </use> </svg> <span class=" display-b uslugi__btn-text">
 									Помощь в оформление ипотеке
-									</p>
+									</span>
 						</button>
 						<button class="uslugi__btn btn-reset"
-							style="background-image: url('./images/dest/uslugiBtnImg/lineBg.webp');">
+							style="background-image: url('./images/dest/uslugiBtnImg/lineBg.webp');" data-btn-filter="arenda">
 
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#line> </use> </svg> <p class="uslugi__btn-text">
+								<use xlink:href=images/dest/sprite.svg#line> </use> </svg> <span class=" display-b uslugi__btn-text">
 									Аренда дома с последующим выкупом
-									</p>
+									</span>
 						</button>
 					</div>
-					<div class="uslugi__info">
+					<div class="uslugi__info" data-content-filter='stroika'>
 						<h4 class="uslugi__info-title">
 							Строительство домов
 						</h4>
-						<ul class="uslugi__info-list">
-							<li class="uslugi__info-item">
-								Перенос и установка счетчиков
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж и ремонт водопровода
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж отопления
-							</li>
-							<li class="uslugi__info-item">
-								Перенос и установка счетчиков
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж и ремонт водопровода
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж отопления
-							</li>
-						</ul>
-						<a href="uslugi.html" class="uslugi__more">Подробнее..</a>
+						<p class="uslugi__info-text">
+							Строительство загородного дома – услуга, которая предполагает целый ряд дел: от разработки и утверждения
+              плана строения до сдачи готового объекта в использование.
+						</p>
+						<a href="services.html" class="uslugi__more">Подробнее..</a>
+					</div>
+					<div class="uslugi__info"data-content-filter='ipoteka'>
+						<h4 class="uslugi__info-title">
+							Помощь в оформление ипотеки
+						</h4>
+						<p class="uslugi__info-text">
+							Как же выбрать комфортную программу кредитования, а еще
+              верно подготовить нужные бумаги для получения кредита ?
+						</p>
+						<a href="services.html" class="uslugi__more">Подробнее..</a>
+					</div>
+					<div class="uslugi__info" data-content-filter='arenda'>
+						<h4 class="uslugi__info-title">
+							Аренда дома с последующим выкупом
+						</h4>
+						<p class="uslugi__info-text">
+							Аренда с правом дальнейшего выкупа
+              - собственно что это за схема.
+						</p>
+						<a href="services.html" class="uslugi__more">Подробнее..</a>
 					</div>
 				</div>
 			</div>
@@ -238,17 +242,10 @@
 							<input class="form__input" type="email" name="email" placeholder="Email">
 						</div>
 						<label class="form__label">
-							<p class="form__label-text">Опишите Вашу заявку</p>
+							<span class="display-b form__label-text">Опишите Вашу заявку</span>
 							<textarea class="form__label-message" name="message"></textarea>
 						</label>
 						<button class="form__btn btn-reset">Получить консультацию</button>
-						<label class="form-polit">
-							<div class="form-polit__checkbox-box">
-								<input type="checkbox" class="form-polit__checkbox checkbox-hide">
-								<span class="form-polit__checkbox--custom"></span>
-							</div>
-							<p class="form-polit__text">Я согласен на обработку персональных данных</p>
-						</label>
 					</form>
 				</div>
 			</div>
@@ -259,7 +256,7 @@
 			<div class="footer-top">
 				<h3 class="footer-top__title">Сделайте свои мечты
 					<span class="footer-top__title--accent">реальностью</span></h3>
-				<a href="contats.html" class="footer-top__link">Свяжитесь с нами</a>
+				<a href="contacts.html" class="footer-top__link">Свяжитесь с нами</a>
 			</div>
 
 			<div class="footer-contacts">
@@ -277,11 +274,13 @@
 						<img src="./images/dest/instagram.webp" alt="instagram" class="db">
 					</a>
 				</div>
-				<p class="footer__copy text-center">&copy <span class="footer__copy-compy">СтроимВамДом</span> <span
-					class="footer__copy-date">1990 - 2021</span></p>
+				<p class="footer__copy text-center">&copy; <span class="footer__copy-compy">СтроимВамДом</span> <span
+						class="footer__copy-date">1990 - 2021</span></p>
 			</div>
 		</div>
-		
+		<p class="info-polit">
+      Вся представленная на сайте информация, касающаяся цен, информации об услугах, носит информационный характер и ни при каких условиях не является публичной офертой.
+    </p>
 	</footer>
 
 	<script src="./js/main.min.js"></script>
