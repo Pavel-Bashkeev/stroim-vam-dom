@@ -159,11 +159,6 @@
 @media (max-width: 580px) {
   .header__menu {
     overflow-x: scroll;
-
-    &::-webkit-scrollbar {
-      height: 2px;
-      background-color: $accent;
-    }
   }
 
   .menu__item {
@@ -188,9 +183,41 @@
   }
 
   .hero {
+<<<<<<< HEAD
     padding: 170px 0 40px;
     background-image: url('../images/dest/heroBgMin.webp');
   }
+=======
+    padding: 160px 0 40px;
+  }
+
+  .pageCatalog-box {
+    padding: 160px 0 40px;
+  }
+
+  .pageContacts-box {
+    padding: 160px 0 40px;
+  }
+
+  .catalog-btns {
+    overflow-x: scroll;
+  }
+
+  .catalog-list {
+    justify-content: center;
+  }
+
+  .aboutUs-content {
+    flex-direction: column;
+  }
+  .aboutUs-content__box {
+    margin-bottom: 30px;
+}
+.aboutUs-content__right {
+  width: 100%;
+  padding-right: 40px;
+}
+>>>>>>> 7193d80315a7910f7ede7108a6304985fd973f23
 }
 
 @media (max-width: 500px) {

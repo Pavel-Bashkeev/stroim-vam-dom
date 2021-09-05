@@ -67,7 +67,7 @@
   &__links{
     display: flex;
     align-items: center;
-    
+    flex-wrap: wrap;
   }
   &__link{
     width: 32px;
