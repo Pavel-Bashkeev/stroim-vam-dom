@@ -1,13 +1,17 @@
 const catalogList = document.querySelector('.catalog-list');
 // const catalogMore = document.querySelector('.catalon-more');
 const filterBtns = document.querySelectorAll('.catalog-btns__item');
+const prodModalContent = document.querySelector('[data-graph-target="prod-modal"]>.modal-content');
 let dataLength = null;
 let prodQuantity = 5;
 
 const normalPrice = (str) => {
   return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 }
-
+const prodSlider = new Swiper('.modal-slider__container', {
+  slidesPerView: 1,
+  spaceBetween: 10
+})
 if (catalogList) {
   const loadProducts = (quantity = 5) => {
     fetch('../data/house.json')
@@ -43,7 +47,9 @@ if (catalogList) {
       .then(()=>{
         const modal = new GraphModal({
           isOpen: (modal) => {
-            const openBtn = modal.previousActiveElement;
+            const openBtnId = modal.previousActiveElement.dataset.id;
+            loadModalData(openBtnId);
+            prodSlider.updateSize();
           },
         });
 
@@ -52,6 +58,22 @@ if (catalogList) {
   };
 
   loadProducts();
+
+  const loadModalData = (id = 1)=>{
+    fetch('../data/house.json')
+      .then((response) => {
+        return response.json()
+      })
+      .then(data => {
+        // prodModalContent.innerHTML = "";
+
+        for(let dataItem of data){
+          if(dataItem.id == id){
+            console.log(dataItem);
+          }
+        }
+      })
+  }
 
   const loadFilterItem = (itemBlock) => {
     fetch('../data/house.json')
