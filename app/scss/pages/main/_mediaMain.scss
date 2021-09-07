@@ -157,6 +157,13 @@
   .slick-btn {
     display: none;
   }
+  .modal-popup.modal-visible {
+    top: 10%;
+    left: 0;
+    transform: translate(0%,0%);
+    overflow-y: scroll;
+    height: 600px;
+}
 }
 
 @media (max-width: 580px) {
