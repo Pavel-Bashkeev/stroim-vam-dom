@@ -12,3 +12,11 @@ $font-defult: 400 22px/26px $font;
 $font-small: 400 18px/22px $font;
 $font-big: 400 30px/ 36px $font;
 // Font
+
+// // Исправление ошибки fancybox
+// @function max($numbers...) {
+//   @return m#{a}x(#{$numbers});
+// }
+// @function min($numbers...) {
+//   @return m#{i}n(#{$numbers});
+// }
