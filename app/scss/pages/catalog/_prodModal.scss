@@ -75,3 +75,25 @@
     }
   }
 }
+.modal-action__social{
+  color: $black;
+  &-text{
+    text-align: center;
+    margin-top: 30px;
+  }
+  &-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  &-link{
+    display: block;
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+    img{
+      width: 30px;
+    }
+  }
+}

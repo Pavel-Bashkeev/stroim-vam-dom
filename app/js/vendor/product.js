@@ -2,17 +2,24 @@ const catalogList = document.querySelector('.catalog-list');
 // const catalogMore = document.querySelector('.catalon-more');
 const filterBtns = document.querySelectorAll('.catalog-btns__item');
 const prodModalContent = document.querySelector('[data-graph-target="prod-modal"]>.modal-content');
+
+const modalSlider = document.querySelector('.modal-slider .swiper-wrapper');
+const modalSliderPreview = document.querySelector('.modal-preview');
+const modalInfo = document.querySelector('.modal-info');
+
 let dataLength = null;
 let prodQuantity = 5;
 
 const normalPrice = (str) => {
   return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 }
-const prodSlider = new Swiper('.modal-slider__container', {
-  slidesPerView: 1,
-  spaceBetween: 10
-})
+
 if (catalogList) {
+  const prodSlider = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+  });
+
   const loadProducts = (quantity = 5) => {
     fetch('../data/house.json')
       .then((response) => {
@@ -23,8 +30,8 @@ if (catalogList) {
         quantity = dataLength;
         catalogList.innerHTML = '';
 
-        for (let i = 0; i < dataLength; i++){
-          if(i < quantity){
+        for (let i = 0; i < dataLength; i++) {
+          if (i < quantity) {
             let item = data[i]
 
             catalogList.innerHTML += `
@@ -44,34 +51,55 @@ if (catalogList) {
           }
         }
       })
-      .then(()=>{
+      .then(() => {
         const modal = new GraphModal({
           isOpen: (modal) => {
             const openBtnId = modal.previousActiveElement.dataset.id;
             loadModalData(openBtnId);
-            prodSlider.updateSize();
           },
         });
-
-        
       })
+      
   };
 
   loadProducts();
 
-  const loadModalData = (id = 1)=>{
+  const loadModalData = (id = 1) => {
     fetch('../data/house.json')
       .then((response) => {
         return response.json()
       })
       .then(data => {
-        // prodModalContent.innerHTML = "";
+        modalSlider.innerHTML = ''
+        modalSliderPreview.innerHTML = ''
+        modalInfo.innerHTML = ''
 
-        for(let dataItem of data){
-          if(dataItem.id == id){
+        for (let dataItem of data) {
+          if (dataItem.id == id) {
             console.log(dataItem);
+
+            const slides = dataItem.images.map(image => {
+              return `
+              <div class='swiper-slide'>
+                <img src='${image}' alt='image' class="swiper-slide__img">
+              </div>
+              
+              `
+            })
+            const slidesPreview = dataItem.images.map((image, idx) => {
+              return `
+              <div class="modal-preview__item" data-index="${idx}">
+								<img src='${image}' alt="" class="swiper-slide__img">
+							</div>
+              `
+            })
+            modalSlider.innerHTML = slides.join('');
+            modalSliderPreview.innerHTML = slidesPreview.join('');
           }
         }
+      })
+      .then(()=>{
+        prodSlider.update();
       })
   }
 
@@ -82,9 +110,9 @@ if (catalogList) {
       })
       .then(data => {
         catalogList.innerHTML = '';
-        for (let i = 0; i < dataLength; i++){
+        for (let i = 0; i < dataLength; i++) {
           let item = data[i]
-          if(item.route === itemBlock){
+          if (item.route === itemBlock) {
             catalogList.innerHTML += `
             <div class="catalog-list__item" data-filter-item='${item.route}'>
               <p class="catalog-list__item-name">${item.title}</p>
@@ -103,17 +131,17 @@ if (catalogList) {
         }
       })
   }
-  window.addEventListener('DOMContentLoaded', ()=>{
+  window.addEventListener('DOMContentLoaded', () => {
     filterBtns.forEach(item => {
-      
-      item.addEventListener('click', (e)=>{
+
+      item.addEventListener('click', (e) => {
         let target = e.target;
         let filterBtnValue = target.dataset.filterBtn;
-        for(let i =0; i < filterBtns.length; i++){
+        for (let i = 0; i < filterBtns.length; i++) {
           filterBtns[i].classList.remove('active-btn');
         }
         target.classList.add('active-btn')
-        filterBtnValue == 'all' ? loadProducts(): loadFilterItem(filterBtnValue);
+        filterBtnValue == 'all' ? loadProducts() : loadFilterItem(filterBtnValue);
       })
     });
   })
