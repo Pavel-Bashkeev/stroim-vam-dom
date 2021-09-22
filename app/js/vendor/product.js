@@ -57,7 +57,7 @@ if (catalogList) {
           isOpen: (modal) => {
             const openBtnId = modal.previousActiveElement.dataset.id;
             loadModalData(openBtnId);
-            
+
           },
         });
       })
@@ -142,6 +142,22 @@ if (catalogList) {
           </div>
           <div class="modal-info__item">
             <h4 class="modal-info__item-title">
+              Площадь участка:
+            </h4>
+            <p class="modal-info__text">
+              ${dataItem.ground} сот.
+            </p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Удаленность от МКАД:
+            </h4>
+            <p class="modal-info__text">
+              ${dataItem.distance} км
+            </p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
               Транспортная доступность:
             </h4>
             <p class="modal-info__text">
@@ -152,7 +168,7 @@ if (catalogList) {
             <h4 class="modal-info__item-title">
               Цена:
             </h4>
-            <p class="modal-info__text">${normalPrice(dataItem.price)} р</p>
+            <p class="modal-info__text">от ${normalPrice(dataItem.price)} р</p>
           </div>
             `
           }
@@ -161,14 +177,14 @@ if (catalogList) {
       .then(() => {
         prodSlider.update();
         document.querySelectorAll('.modal-preview__item').forEach(item => {
-          item.addEventListener('click', (event)=>{
+          item.addEventListener('click', (event) => {
             let target = event.currentTarget;
             let idx = target.dataset.index
 
             prodSlider.slideTo(idx)
           })
         })
-        
+
       })
   }
 
