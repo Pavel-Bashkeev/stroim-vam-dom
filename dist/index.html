@@ -5,6 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="canonical" href="https://stroimvamdom.com/" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Строительство и продажа домов в Московской области." />
+	<meta property="og:description" content="Сделайте свои мечты реальностью" />
+	<meta property="og:url" content="https://stroimvamdom.com/" />
+	<meta property="og:site_name" content="stroimvamdom" />
+	<link rel="shortcut icon" href="images/dest/logo.webp" type="image/png">
 	<link rel="stylesheet" href="./css/style.min.css">
 	<title>Строительство домов</title>
 </head>
@@ -20,10 +29,7 @@
 						<a href="catalog.html" class="menu__link">Каталог</a>
 					</li>
 					<li class="menu__item">
-						<a href="uslugi.html" class="menu__link">Услуги</a>
-					</li>
-					<li class="menu__item">
-						<a href="about.html" class="menu__link">О нас</a>
+						<a href="services.html" class="menu__link">Услуги</a>
 					</li>
 					<li class="menu__item">
 						<a href="contacts.html" class="menu__link">Контакты</a>
@@ -31,8 +37,7 @@
 				</ul>
 			</nav>
 			<div class="header__contacts display-f flex-column items-center">
-				<a href="tel:+79859589074" class="header__tel mr-bottom-10">+79859589074</a>
-				<button class="header__btn btn-reset display-b">Заказать звонок</button>
+				<a href="#form" class="header__btn btn-reset display-b">Заказать звонок</a>
 			</div>
 		</div>
 	</header>
@@ -41,15 +46,15 @@
 			<div class="container hero__container display-f justify-beetwen">
 				<div class="hero__info">
 					<h1 class="hero__title">
-						Строительство домов в&nbsp;Москве и&nbsp;Московской области
+						Строительство и продажа домов в&nbsp;&nbsp;Московской области
 					</h1>
 					<p class="hero__subtitle">
 						Надежное будущее строим
 						вместе
 					</p>
-					<button class="hero__btn btn-reset">
+					<a href="#form" class="hero__btn btn-reset">
 						Получить консультацию
-					</button>
+					</a>
 				</div>
 				<div class="slider-wrapper">
 					<div class="slider">
@@ -61,14 +66,49 @@
 				</div>
 			</div>
 		</section>
+		<section class="aboutUs" id="aboutUs">
+			<div class="container aboutUs__container display-f align-center">
+				<div class="aboutUs__info">
+					<h4 class="aboutUs__title">О нас</h4>
+					<ul class="aboutUs__list">
+						<li class="aboutUs__item">Качественное проведение работ</li>
+						<li class="aboutUs__item">Обсуждение работы на каждом этапе</li>
+						<li class="aboutUs__item">Профессиональный инструмент</li>
+						<li class="aboutUs__item">Начинаем работу без аванса</li>
+						<li class="aboutUs__item">Доступные цены</li>
+					</ul>
+				</div>
+				<div class="aboutUs__actions">
+					<span class="aboutUs__actions-text--top">Более</span>
+					<span class="aboutUs__actions-count">15</span>
+					<span class="aboutUs__actions-text--bottom">лет успешной работы</span>
+				</div>
+			</div>
+			<div class="container">
+				<div class="aboutUs-content align-center">
+					<div class="aboutUs-content__box">
+						<img class="aboutUs-content__img db" src="./images/dest/aboutBg.webp" alt="">
+					</div>
+					<div class="aboutUs-content__right">
+						<h3 class="aboutUs-content__title">
+							Вы в надежных руках
+						</h3>
+						<p class="aboutUs-content__descr">
+							Наша цель – обеспечить людей теплым и уютным жильем для всей семьи, благодаря квалифицированным
+							специалистам и доступным ценам, наши клиенты обеспечивают себе быстрое и качественное возведение дома
+							мечты.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="work">
 			<div class="container work__container">
 				<div class="work__title-inner display-f justify-beetwen align-center">
 					<h2 class="work__title">КАК МЫ РАБОТАЕМ</h2>
 				</div>
 				<ul class="work__list display-f flex-wrap justify-around">
-					<li class="work__item display-f align-center">Бесплатный выезд мастера на&nbsp;объект для оценки
-						работы
+					<li class="work__item display-f align-center">БЕСПЛАТНЫЙ ПОКАЗ дома по записи
 					</li>
 					<li class="work__item display-f align-center">Оформление и&nbsp;подписание договора</li>
 					<li class="work__item display-f align-center">Обсуждение работы с&nbsp;заказчиком</li>
@@ -85,69 +125,64 @@
 				<h3 class="uslugi__title">
 					Наши услуги
 				</h3>
-				<div class="uslugi__items display-f justify-center">
+				<div class="uslugi__items display-f justify-center align-stretch">
 					<div class="uslugi__btns display-f flex-column">
 						<button class="uslugi__btn btn-reset uslugi__btn--active"
-							style="background-image: url('./images/dest/uslugiBtnImg/handleBg.webp');">
-							<p class="uslugi__btn-text">
-								Отделочные
-								работы
-							</p>
+							style="background-image: url('./images/dest/uslugiBtnImg/houseBg.webp');" data-btn-filter="stroika">
+
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#handle> </use>
-							</svg>
-						</button> <button class="uslugi__btn btn-reset"
-							style="background-image: url('./images/dest/uslugiBtnImg/houseBg.webp');">
-							<p class="uslugi__btn-text">
-								Строительство
-								домов
-							</p>
+								<use xlink:href=images/dest/sprite.svg#house> </use> </svg> <span class=" display-b uslugi__btn-text">
+									Строительство домов
+									</span>
+						</button>
+						<button class="uslugi__btn btn-reset"
+							style="background-image: url('./images/dest/uslugiBtnImg/lightBg.webp');" data-btn-filter="ipoteka">
+
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#house> </use>
-							</svg>
-						</button> <button class="uslugi__btn btn-reset"
-							style="background-image: url('./images/dest/uslugiBtnImg/lightBg.webp');">
-							<p class="uslugi__btn-text">
-								Электрика
-							</p>
+								<use xlink:href=images/dest/sprite.svg#light> </use> </svg> <span class=" display-b uslugi__btn-text">
+									Помощь в оформление ипотеке
+									</span>
+						</button>
+						<button class="uslugi__btn btn-reset"
+							style="background-image: url('./images/dest/uslugiBtnImg/lineBg.webp');" data-btn-filter="arenda">
+
 							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#light> </use>
-							</svg>
-						</button> <button class="uslugi__btn btn-reset"
-							style="background-image: url('./images/dest/uslugiBtnImg/lineBg.webp');">
-							<p class="uslugi__btn-text">
-								Сантехника
-							</p>
-							<svg class='uslugi__btn-icon'>
-								<use xlink:href=images/dest/sprite.svg#line> </use>
-							</svg>
+								<use xlink:href=images/dest/sprite.svg#line> </use> </svg> <span class=" display-b uslugi__btn-text">
+									Аренда дома с последующим выкупом
+									</span>
 						</button>
 					</div>
-					<div class="uslugi__info">
-						<h4 class="uslugi__info-title">
-							Сантехника
-						</h4>
-						<ul class="uslugi__info-list">
-							<li class="uslugi__info-item">
-								Перенос и установка счетчиков
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж и ремонт водопровода
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж отопления
-							</li>
-							<li class="uslugi__info-item">
-								Перенос и установка счетчиков
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж и ремонт водопровода
-							</li>
-							<li class="uslugi__info-item">
-								Монтаж отопления
-							</li>
-						</ul>
-						<a href="uslugi.html" class="uslugi__more">Подробнее..</a>
+					<div class="uslugi__info-inner">
+						<div class="uslugi__info" data-content-filter='stroika'>
+							<h4 class="uslugi__info-title">
+								Строительство домов
+							</h4>
+							<p class="uslugi__info-text">
+								Строительство загородного дома – услуга, которая предполагает целый ряд дел: от разработки и утверждения
+								плана строения до сдачи готового объекта в использование.
+							</p>
+							<a href="services.html" class="uslugi__more">Подробнее..</a>
+						</div>
+						<div class="uslugi__info" data-content-filter='ipoteka'>
+							<h4 class="uslugi__info-title">
+								Помощь в оформление ипотеки
+							</h4>
+							<p class="uslugi__info-text">
+								Как же выбрать комфортную программу кредитования, а еще
+								верно подготовить нужные бумаги для получения кредита ?
+							</p>
+							<a href="services.html" class="uslugi__more">Подробнее..</a>
+						</div>
+						<div class="uslugi__info" data-content-filter='arenda'>
+							<h4 class="uslugi__info-title">
+								Аренда дома с последующим выкупом
+							</h4>
+							<p class="uslugi__info-text">
+								Аренда с правом дальнейшего выкупа
+								- собственно что это за схема.
+							</p>
+							<a href="services.html" class="uslugi__more">Подробнее..</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -174,40 +209,22 @@
 				</div>
 			</div>
 		</section>
-		<section class="aboutUs">
-			<div class="container aboutUs__container display-f align-center">
-				<div class="aboutUs__info">
-					<h4 class="aboutUs__title">О нас</h4>
-					<ul class="aboutUs__list">
-						<li class="aboutUs__item">Качественное проведение работ</li>
-						<li class="aboutUs__item">Обсуждение работы на каждом этапе</li>
-						<li class="aboutUs__item">Профессиональный инструмент</li>
-						<li class="aboutUs__item">Начинаем работу без аванса</li>
-						<li class="aboutUs__item">Доступные цены</li>
-					</ul>
-				</div>
-				<div class="aboutUs__actions">
-					<span class="aboutUs__actions-text--top">Более</span>
-					<span class="aboutUs__actions-count">15</span>
-					<span class="aboutUs__actions-text--bottom">лет успешной работы</span>
-				</div>
-			</div>
-		</section>
+
 		<section class="gallery">
 			<div class="container">
 				<h4 class="gallery__title">
 					ГАЛЕРЕЯ РАБОТ
 				</h4>
 				<div class="gallery__items">
-					<div class="gallery__item">
-						<img src="./images/dest/gallery/plitka/main.webp" alt="кладка плитки" class="gallery__item-img">
-						<span class="gallery__item-descr">Плитка</span>
+					<div class="gallery__item" data-modal-btn='finishing'>
+						<img src="./images/dest/gallery/plitka/main.webp" alt="Внутренняя отделка" class="gallery__item-img">
+						<span class="gallery__item-descr">Внутренняя отделка</span>
 					</div>
-					<div class="gallery__item">
+					<div class="gallery__item" data-modal-btn="placing">
 						<img src="./images/dest/gallery/kladka/main.webp" alt="кладка блоков" class="gallery__item-img">
 						<span class="gallery__item-descr">Кладка</span>
 					</div>
-					<div class="gallery__item">
+					<div class="gallery__item" data-modal-btn="housetop">
 						<img src="./images/dest/gallery/krov/main.webp" alt="кладка плитки" class="gallery__item-img">
 						<span class="gallery__item-descr">Кровля</span>
 					</div>
@@ -218,24 +235,17 @@
 			<h4 class="feedback__title">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h4>
 			<div class="feedback__form">
 				<div class="container">
-					<form class="form" method="POST" action="./serverMail/mailForm.php">
+					<form id="form" class="form" method="POST" action="./serverMail/mailForm.php">
 						<div class="form__inputs">
 							<input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
 							<input class="form__input" type="tel" name="telefon" placeholder="Номер телефона" required>
 							<input class="form__input" type="email" name="email" placeholder="Email">
 						</div>
 						<label class="form__label">
-							<p class="form__label-text">Опишите Вашу заявку</p>
+							<span class="display-b form__label-text">Опишите Вашу заявку</span>
 							<textarea class="form__label-message" name="message"></textarea>
 						</label>
 						<button class="form__btn btn-reset">Получить консультацию</button>
-						<label class="form-polit">
-							<div class="form-polit__checkbox-box">
-								<input type="checkbox" class="form-polit__checkbox checkbox-hide">
-								<span class="form-polit__checkbox--custom"></span>
-							</div>
-							<p class="form-polit__text">Принимаю условия Политики конфединциальности</p>
-						</label>
 					</form>
 				</div>
 			</div>
@@ -243,29 +253,71 @@
 	</main>
 	<footer class="footer">
 		<div class="container footer__container display-f align-center justify-beetwen">
-			<div class="footer__contacts">
-				<div class="footer__tel display-f align-center">
-					<svg class='footer__contacts-img'>
-						<use xlink:href=images/dest/sprite.svg#phone> </use>
-					</svg>
-					<a href="tel:+79859589074" class="footer__tel:link">+79859589074</a>
-				</div>
-				<div class="footer__email display-f align-center">
-					<svg class='footer__contacts-img'>
-						<use xlink:href=images/dest/sprite.svg#email></use>
-					</svg>
-					<a href="mailto:stroimvamdom24@mail.com" class="footer__tel:link">stroimvamdom24@mail.com</a>
-				</div>
+			<div class="footer-top">
+				<h3 class="footer-top__title">Сделайте свои мечты
+					<span class="footer-top__title--accent">реальностью</span></h3>
+				<a href="contacts.html" class="footer-top__link">Свяжитесь с нами</a>
 			</div>
-			<div class="footer__info">
-				<p class="footer__info-text">ИП Костин А.Н.</p>
-				<p class="footer__info-text">УНП <span>11111111111</span></p>
-				<p class="footer__info-text">Юридический адрес</p>
+
+			<div class="footer-contacts">
+				<a href="/" class="logo">
+					<img src="./images/dest/logo.webp" alt="Строим Вам Дом" class="logo mr-rigth-40">
+				</a>
+				<div class="footer-contacts__links df align-center">
+					<a href="#" class="footer-contacts__link">
+						<img src="./images/dest/whatsapp.webp" alt="whatsapp" class="db">
+					</a>
+					<a href="#" class="footer-contacts__link">
+						<img src="./images/dest/telegram.webp" alt="telegram" class="db">
+					</a>
+					<a href="#" class="footer-contacts__link">
+						<img src="./images/dest/instagram.webp" alt="instagram" class="db">
+					</a>
+				</div>
+				<p class="footer__copy text-center">&copy; <span class="footer__copy-compy">СтроимВамДом</span> <span
+						class="footer__copy-date">1990 - 2021</span></p>
 			</div>
 		</div>
-		<p class="footer__copy text-center">&copy <span class="footer__copy-compy">Строим Вам Дом</span> <span
-				class="footer__copy-date">1990 - 2021</span></p>
+		<p class="info-polit">
+			Вся представленная на сайте информация, касающаяся цен, информации об услугах, носит информационный характер и ни
+			при каких условиях не является публичной офертой.
+		</p>
 	</footer>
+	<div class="modal-popup hide" data-target-modal='finishing'>
+		<button class="btn-reset modal-popup__close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-popup__items">
+			<img src="./images/dest/gallery/plitka/5b5f7ed089c3bafe6f316002debdf66f.webp" alt=""
+				class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/plitka/9291ce02c1a3.webp" alt="" class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/plitka/images.webp" alt="" class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/plitka/5b5f7ed089c3bafe6f316002debdf66f.webp" alt=""
+				class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/plitka/9291ce02c1a3.webp" alt="" class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/plitka/images.webp" alt="" class="modal-popup-otdelka__img">
+		</div>
+	</div>
+	<div class="modal-popup hide" data-target-modal='placing'>
+		<button class="btn-reset modal-popup__close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-popup__items">
+			<img src="./images/dest/gallery/kladka/1331379869_18.webp" alt=""
+				class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/kladka/5886ed8e7ce9b-mid.webp" alt="" class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/kladka/main.webp" alt="" class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/kladka/unnamed.webp" alt=""
+				class="modal-popup-otdelka__img">
+		</div>
+	</div>
+	<div class="modal-popup hide" data-target-modal='housetop'>
+		<button class="btn-reset modal-popup__close" aria-label="Закрыть модальное окно"></button>
+		<div class="modal-popup__items">
+			<img src="./images/dest/gallery/krov/342568111_krovlya-metallocherepitsa-kiev.webp" alt=""
+				class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/krov/raznovidnosti-i-plyusy-metallocherepicy-grand-line-14.webp" alt="" class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/krov/unnamed (1).webp" alt="" class="modal-popup-otdelka__img">
+			<img src="./images/dest/gallery/krov/main.webp" alt=""
+				class="modal-popup-otdelka__img">
+		</div>
+	</div>
 	<script src="./js/main.min.js"></script>
 </body>
 

@@ -3,6 +3,7 @@ const catalogList = document.querySelector('.catalog-list');
 const filterBtns = document.querySelectorAll('.catalog-btns__item');
 const prodModalContent = document.querySelector('[data-graph-target="prod-modal"]>.modal-content');
 
+
 const modalSlider = document.querySelector('.modal-slider .swiper-wrapper');
 const modalSliderPreview = document.querySelector('.modal-preview');
 const modalInfo = document.querySelector('.modal-info');
@@ -56,10 +57,11 @@ if (catalogList) {
           isOpen: (modal) => {
             const openBtnId = modal.previousActiveElement.dataset.id;
             loadModalData(openBtnId);
+            
           },
         });
       })
-      
+
   };
 
   loadProducts();
@@ -88,18 +90,85 @@ if (catalogList) {
             })
             const slidesPreview = dataItem.images.map((image, idx) => {
               return `
-              <div class="modal-preview__item" data-index="${idx}">
+              <div class="modal-preview__item" tabindex="0" data-index="${idx}">
 								<img src='${image}' alt="" class="swiper-slide__img">
 							</div>
               `
             })
             modalSlider.innerHTML = slides.join('');
             modalSliderPreview.innerHTML = slidesPreview.join('');
+            modalInfo.innerHTML = `
+            <h3 class="modal-info__title">
+            ${dataItem.title}
+          </h3>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Размеры:
+            </h4>
+            <div class="modal-info__size">
+              <p class="modal-info__size-square">${dataItem.size.square}</p>
+              <p class="modal-info__size-area">${dataItem.size.area}m<sup>2</sup></p>
+            </div>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Утепление:
+            </h4>
+            <p class="modal-info__text">${dataItem.warming}</p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Кладка:
+            </h4>
+            <p class="modal-info__text">${dataItem.masonry}</p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Фундамент:
+            </h4>
+            <p class="modal-info__text">${dataItem.foundation}</p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Отделка с наружи:
+            </h4>
+            <p class="modal-info__text">${dataItem.externalFacade}</p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Отделка внутри:
+            </h4>
+            <p class="modal-info__text">${dataItem.inside}</p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Транспортная доступность:
+            </h4>
+            <p class="modal-info__text">
+            ${dataItem.transAcc}
+            </p>
+          </div>
+          <div class="modal-info__item">
+            <h4 class="modal-info__item-title">
+              Цена:
+            </h4>
+            <p class="modal-info__text">${normalPrice(dataItem.price)} р</p>
+          </div>
+            `
           }
         }
       })
-      .then(()=>{
+      .then(() => {
         prodSlider.update();
+        document.querySelectorAll('.modal-preview__item').forEach(item => {
+          item.addEventListener('click', (event)=>{
+            let target = event.currentTarget;
+            let idx = target.dataset.index
+
+            prodSlider.slideTo(idx)
+          })
+        })
+        
       })
   }
 

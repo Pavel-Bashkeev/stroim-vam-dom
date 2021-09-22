@@ -13,10 +13,6 @@
 .modal-slider {
   width: calc(50% - 20px);
   flex-shrink:0;
-  &__container {
-    width: 100%;
-    overflow: hidden;
-  }
 }
 
 .swiper-slide__img {
@@ -27,14 +23,17 @@
 .modal-preview {
   display: flex;
   align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
 
   &__item {
-    flex: 1;
     height: 165px;
     overflow: hidden;
-
-    &:not(:last-child) {
-      margin-right: 20px;
+    width: 76px;
+    height: 75px;
+    cursor: pointer;
+    img{
+      height: 100%;
     }
   }
 }
@@ -61,7 +60,7 @@
   }
 
   &__text {
-    padding: 0px 40px;
+    padding: 0px 0px 0px 40px;
     letter-spacing: 0px;
   }
 
@@ -95,5 +94,13 @@
     img{
       width: 30px;
     }
+  }
+}
+@media (max-width: 900px) {
+  .modal-slider{
+    width: 100%;
+  }
+  .modal-info{
+    width: 100%;
   }
 }
