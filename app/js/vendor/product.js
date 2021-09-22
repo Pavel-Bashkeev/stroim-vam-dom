@@ -161,7 +161,7 @@ if (catalogList) {
               Транспортная доступность:
             </h4>
             <p class="modal-info__text">
-            ${dataItem.transAcc}
+            ${dataItem.transAcc ? dataItem.transAcc : 'Уточните у нашего специалиста'}
             </p>
           </div>
           <div class="modal-info__item">
