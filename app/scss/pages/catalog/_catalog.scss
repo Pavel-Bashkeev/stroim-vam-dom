@@ -84,6 +84,7 @@
     background-color: #2b2b2b;
     position: relative;
     overflow: hidden;
+    width: 100%;
 
     img {
       display: block;
@@ -94,12 +95,19 @@
       background-color: #ff7a00;
       padding: 15px 0;
       text-align: center;
+      min-height: 82px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
     &-box {
       // margin-bottom: 20px;
       box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.3);
       position: relative;
+      max-width: 342px;
+      width: 100%;
+      min-height: 250px;
 
       img {
         display: block;
